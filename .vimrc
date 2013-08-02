@@ -1,8 +1,5 @@
 set nocompatible
 
-" enable mouse control
-se mouse=a
-
 " Define leader key
 let mapleader='\'
 
@@ -86,16 +83,16 @@ nmap <leader><leader> :NERDTreeToggle<cr>
 
 " Python Mode settings
 " url: https://githun.com/klen/python-mode
+let g:pymode_virtualenv = 1
 let g:pymode_rope = 0
 let g:pymode_lint = 1
-let g:pymode_lint_checker = "pyflakes,pep8"
+let g:pymode_lint_checker = "pyflakes"
 let g:pymode_lint_onfly = 1
 let g:pymode_lint_write = 1
 let g:pymode_lint_message = 1
 let g:pymode_lint_minheight = 3
 let g:pymode_lint_maxheight = 6
 let g:pymode_folding = 0
-let g:pymode_virtualenv = 1
 let g:pymode_utils_whitespaces = 1
 let g:pymode_syntax = 1
 let g:pymode_syntax_all = 1
